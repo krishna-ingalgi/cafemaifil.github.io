@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  background-color: #232b2b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 10px;
+  font-family: Trebuchet MS;
+}
+
+nav .logo {
+  height: 100px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding: 20px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(224, 206, 45);
+  border-radius: 50px;
+  transition: 0.3s ease;
+  padding: 8px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgb(224, 206, 45);
+  border-radius: 50px;
+  color: #000;
+  transition: 0.6s ease;
+}
+
+nav .menu-btn i {
+  color: aliceblue;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.logo img {
+  padding-left: 10px;
+  float: left;
+  height: 100px;
+  width: auto;
+}
+.container {
+  width: 100%;
+}
+.info {
+  height: 120vh;
+  background-color: #000;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.info h1 {
+  font-family: "Pangolin", cursive;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(224, 206, 45);
+  padding-top: 30px;
+}
+
+.info p {
+  font-size: 25px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(224, 206, 45);
+  padding-top: 20px;
+  font-family: "Just Another Hand", cursive;
+  font-weight: bold;
+}
+
+.info h2 {
+  font-family: "Pangolin", cursive;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(224, 206, 45);
+  padding-top: 30px;
+}
+
+.info ul {
+  font-family: "Just Another Hand", cursive;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  list-style: none;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(224, 206, 45);
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.info h4 {
+  font-family: "Pangolin", cursive;
+  line-height: 25px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 20px;
+  color: rgb(224, 206, 45);
+  padding-top: 40px;
+}
+
+.contact-box {
+  height: 120vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(224, 206, 45);
+}
+.contact-box h1 {
+  font-family: "Pangolin", cursive;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.contact-box form {
+  font-family: "Trebuchet MS";
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.fieldemail {
+  text-transform: lowercase;
+  text-align: center;
+  width: 80%;
+  border: 2px solid black;
+  outline: none;
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.6s;
+}
+.btn {
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+}
+
+.field {
+  text-align: center;
+  width: 80%;
+  border: 2px solid black;
+  outline: none;
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.6s;
+}
+
+textarea {
+  min-height: 180px;
+}
+
+.btn {
+  width: 20vh;
+  padding: 0.5rem 1rem;
+  background-color: rgb(224, 206, 45);
+  color: #000;
+
+  font-size: 1.1rem;
+  border: 2px solid black;
+  outline: invert;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(224, 206, 45);
+}
+
+footer {
+  margin-top: 0%;
+}
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+.icons {
+  background-color: #232b2b;
+  color: rgb(0, 0, 0);
+  height: 10%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.icons a {
+  height: 5vh;
+  width: 5vh;
+  background-color: #232b2b;
+  text-align: center;
+  padding: 10px;
+  /* line-height: 60px; */
+}
+
+.icons i {
+  align-items: center;
+  color: rgb(224, 206, 45);
+  transition: 0.3s linear;
+}
+
+a:hover i {
+  transform: scale(1.15);
+}
+nav .menu-btn i {
+  color: rgb(224, 206, 45);
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#click {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background-color: #232b2b;
+    height: 100vh;
+    width: 50%;
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 40px 0;
+  }
+  #click:checked ~ ul {
+    left: 50%;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul li a {
+    font-size: 20px;
+    display: block;
+    color: rgb(224, 206, 45);
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(224, 206, 45);
+    transition: 0.3s ease;
+  }
+  footer h6 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #232b2b;
+    color: black;
+    width: 100%;
+    height: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .info p {
+    line-height: 17px;
+    font-size: 15px;
+  }
+  .info h2 {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  .info h1 {
+    font-family: "Pangolin", cursive;
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  .info h4 {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .info {
+    height: 100vh;
+    width: 100%;
+  }
+  .contact-box {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url("burger-mobile.jpg");
+    background-blend-mode: darken;
+  }
+
+  .main h1 {
+    text-size-adjust: auto;
+    max-width: fit-content;
+    font-family: "Berkshire Swash", cursive;
+    padding-top: 50%;
+    margin-left: 15%;
+    font-size: 65px;
+    color: rgb(224, 206, 45);
+    letter-spacing: 10px;
+  }
+
+  .main h4 {
+    padding-top: 2%;
+    max-width: fit-content;
+    font-family: "Laila", sans-serif;
+    margin-left: 15%;
+    font-size: 25px;
+    color: rgb(224, 206, 45);
+    letter-spacing: 2px;
+  }
+  footer {
+    width: 100%;
+  }
+  .box {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+  .menu {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+  .menu h2,
+  .social h2,
+  .services h2,
+  .menu ul li,
+  .services li,
+  .LOCATION h2 {
+    font-size: larger;
+    line-height: 50px;
+  }
+  .social {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+  .social img {
+    width: 80%;
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+  .LOCATION {
+    height: 100vh;
+    width: 100%;
+  }
+  .LOCATION iframe {
+    height: 400px;
+    width: 250px;
+  }
+
+  footer h6 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #232b2b;
+    color: black;
+    width: 100%;
+    height: 20px;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    background-color: #232b2b;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 2px 0;
+    line-height: 20px;
+  }
+  #click:checked ~ ul {
+    left: 0%;
+    height: 100vh;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul li a {
+    max-width: fit-content;
+    font-size: 15px;
+    background-color: #232b2b;
+    display: inline;
+    color: rgb(224, 206, 45);
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: rgb(224, 206, 45);
+    border-radius: 50px;
+    color: black;
+    transition: 0.3s ease;
+  }
+}

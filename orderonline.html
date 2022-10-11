@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>orderonline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Just+Another+Hand&family=Laila:wght@300;400;500&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="orderonline.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="cafesmall.png" type="image/icon type" />
+    <script
+      src="https://kit.fontawesome.com/7bf5fc8939.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="logo1.png" />
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <ul>
+        <li>
+          <a class="active" href="index.html"><b>HOME</b></a>
+        </li>
+        <li>
+          <a href="aboutus.html"><b>ABOUT US</b></a>
+        </li>
+        <li>
+          <a href="gallery.html"><b>GALLERY</b></a>
+        </li>
+        <li>
+          <a href="contactus.html"><b>CONTACT US</b></a>
+        </li>
+        <li>
+          <a href="orderonline.html" id="ORDER"><b>ORDER ONLINE</b></a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <div class="box">
+      <div class="menu">
+        <h2>MENU CARD</h2>
+        <ul>
+          <b
+            ><i>
+              <h3>FAST FOOD</h3>
+            </i></b
+          >
+          <ul>
+            <li>
+              <b>BURGER<span>.......... ₹65/-</span></b>
+            </li>
+            <li>
+              <b>VEG GRILLED SANDWICH<span>.......... ₹60/-</span></b>
+            </li>
+            <li>
+              <b>CHEESE GRILLED SANDWICH<span>.......... ₹80/-</span></b>
+            </li>
+            <li>
+              <b>PLAIN MAGGIE<span>.......... ₹50/-</span></b>
+            </li>
+            <li>
+              <b>MASALA MAGGIE<span>.......... ₹70/-</span></b>
+            </li>
+            <li>
+              <b>CHEESE MAGGIE<span>.......... ₹70/-</span></b>
+            </li>
+            <li>
+              <b>FRENCH FRIES<span>.......... ₹70/-</span></b>
+            </li>
+            <li>
+              <b>PERI PERI FRIES<span>.......... ₹90/-</span></b>
+            </li>
+            <li>
+              <b>CHEESE FRIES<span>.......... ₹99/-</span></b>
+            </li>
+          </ul>
+
+          <b
+            ><i>
+              <h3>SNACKS</h3>
+            </i></b
+          >
+          <ul>
+            <li>
+              <b>VADAPAV<span>.......... ₹20/-</span></b>
+            </li>
+            <li>
+              <b
+                >BHAJJI<sub>(ONION,POTATO,CHILLI)</sub
+                ><span>.......... ₹50/-</span></b
+              >
+            </li>
+            <li>
+              <b>BREAD PATTICE<span>.......... ₹20/-</span></b>
+            </li>
+            <li>
+              <b>VADACHAAT<span>.......... ₹20/-</span></b>
+            </li>
+            <li>
+              <b>BHEL<span>.......... ₹50/-</span></b>
+            </li>
+          </ul>
+
+          <b
+            ><i>
+              <h3>BEVERAGES</h3>
+            </i></b
+          >
+          <ul>
+            <li>
+              <b>TEA<span>.......... ₹15/-</span></b>
+            </li>
+            <li>
+              <b>BLACK TEA<span>.......... ₹10/-</span></b>
+            </li>
+            <li>
+              <b>LEMON TEA<span>.......... ₹15/-</span></b>
+            </li>
+            <li>
+              <b>HOT COFFEE<span>.......... ₹30/-</span></b>
+            </li>
+            <li>
+              <b>BLACK COFFEE<span>.......... ₹20/-</span></b>
+            </li>
+            <li>
+              <b>COLD COFFEE<span>.......... ₹50/-</span></b>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="online">
+        <h4>Order Online</h4>
+        <br />
+        <div class="grid-container">
+          <div class="Fast">
+            <label for="fastfood">Select your Fast Food Order:</label>
+            <select name="Order Fast Food" id="fast">
+              <option value="Burger">Burger</option>
+              <option value="Grilled Sandwich">Grilled Sandwich</option>
+              <option value="Cheese Grilled Sandwich">
+                Cheese Grilled Sandwich
+              </option>
+              <option value="Plain Maggi">Plain Maggie</option>
+              <option value="Masala Maggi">Masala Maggie</option>
+              <option value="Cheese Maggi">Cheese Maggie</option>
+              <option value="French Fries">French Fries</option>
+              <option value="Peri Peri Fries">Peri Peri Fries</option>
+              <option value="Cheese Fries">Cheese Fries</option>
+            </select>
+          </div>
+          <div class="Quantity">
+            <input type="text" name="quantity" id="quantity" class="field"
+            placeholder="1" required
+          </div>
+          <div class="Amount">
+            <input type="text" name="amount" id="amount" class="field"
+            placeholder="1" required
+          </div>
+          <div class="Snacks">
+            <label for="snacks">Select your Snacks Order:</label>
+            <select name="Order snacks" id="snacks">
+              <option value="Vadapav">Vadapav</option>
+              <option value="Bhajji">Bhajji</option>
+              <option value="Onion Bhajji">Onion Bhajji</option>
+              <option value="Potato Bhajji">Potato Bhajji</option>
+              <option value="Chilli Bhajji">Chilli Bhajji</option>
+              <option value="Bread Pattice">Bread Pattice</option>
+              <option value="Vadachat">Vadachat</option>
+              <option value="Bhel">Bhel</option>
+            </select>
+          </div>
+          <div class="Quantity">
+            <input type="text" name="quantity" id="quantity" class="field"
+            placeholder="1" required
+          </div>
+          <div class="Amount">
+            <input type="text" name="amount" id="amount" class="field"
+            placeholder="1" required
+          </div>
+          <div class="Beverages">
+            <label for="beverages">Select your Beverage Order:</label>
+            <select name="Order beverages" id="beverages">
+              <option value="Tea">Tea</option>
+              <option value="Black Tea">Black Tea</option>
+              <option value="Lemon Tea">Lemon Tea</option>
+              <option value="Hot Coffee">Hot Coffee</option>
+              <option value="Black Coffee">Black Coffee</option>
+              <option value="Cold Coffee">Cold Coffee</option>
+            </select>
+          </div>
+          <div class="Quantity">
+            <input type="text" name="quantity" id="quantity" class="field"
+            placeholder="1" required
+          </div>
+          <div class="Amount">
+            <input type="text" name="amount" id="amount" class="field"
+            placeholder="1" required
+          </div>
+        </div>
+
+        <h4>
+          Or Please call us on
+          <h2><b>+91 7558449536</b></h2>
+        </h4>
+        <h6>**Please call one hour prior for online order**</h6>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      <div class="icons">
+        <a href="https://www.instagram.com/cafe_maifil" target="_blank">
+          <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+    <hr />
+  </body>
+</html>

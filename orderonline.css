@@ -1,0 +1,607 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  background-color: #232b2b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 10px;
+  font-family: Trebuchet MS;
+}
+
+nav .logo {
+  height: 100px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(224, 206, 45);
+  border-radius: 50px;
+  transition: 0.3s ease;
+  padding: 8px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgb(224, 206, 45);
+  border-radius: 50px;
+  color: #000;
+  transition: 0.6s ease;
+}
+
+nav .menu-btn i {
+  color: aliceblue;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.logo img {
+  align-items: flex-start;
+  height: 100px;
+  width: auto;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: rgb(237, 217, 217);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+}
+
+.menu h2 {
+  color: rgb(224, 206, 45);
+  padding-top: 10%;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-family: "Pangolin", cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+.menu h3 {
+  font-size: 30px;
+  color: rgb(224, 206, 45);
+  padding-top: 10%;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-family: "Pangolin", cursive;
+  text-align: center;
+}
+
+.menu ul {
+  color: rgb(224, 206, 45);
+  padding-top: 50px;
+  text-align: left;
+  padding-bottom: 2%;
+  padding-left: 5%;
+}
+
+.menu span {
+  float: right;
+  padding-right: 10%;
+  text-align: right;
+  display: block;
+}
+
+.menu ul li {
+  color: rgb(224, 206, 45);
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 40px;
+  font-size: 30px;
+  font-family: "Just Another Hand", cursive;
+}
+
+.menu ul li sub {
+  font-size: 10px;
+}
+.online {
+  text-align: center;
+  height: auto;
+  width: 50%;
+  background: rgb(224, 206, 45);
+}
+
+.online h4 {
+  font-family: "Pangolin", cursive;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  padding-top: 30%;
+  font-size: 40px;
+}
+
+.online h2 {
+  font-family: "Pangolin", cursive;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  padding-top: 30px;
+  font-size: xxx-large;
+}
+
+.online h6 {
+  font-family: "Berkshire Swash", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  height: max-content;
+  width: 80%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons {
+  background-color: #232b2b;
+  color: rgb(0, 0, 0);
+  height: 10%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.icons a {
+  height: 5vh;
+  width: 5vh;
+  background-color: #232b2b;
+  text-align: center;
+  padding: 10px;
+  /* line-height: 60px; */
+}
+
+.icons i {
+  align-items: center;
+  color: rgb(224, 206, 45);
+  transition: 0.3s linear;
+}
+
+a:hover i {
+  transform: scale(1.15);
+}
+
+nav .menu-btn i {
+  color: rgb(224, 206, 45);
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#click {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background-color: #232b2b;
+    height: 100vh;
+    width: 50%;
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 40px 0;
+  }
+
+  #click:checked ~ ul {
+    left: 50%;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    display: block;
+    color: rgb(224, 206, 45);
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(224, 206, 45);
+    transition: 0.3s ease;
+  }
+}
+
+@media (max-width: 1150px) {
+  .box {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu ul li {
+    font-size: 25px;
+    text-align: left;
+    list-style-type: none;
+  }
+
+  .menu h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .menu ul {
+    list-style-type: circle;
+  }
+
+  .online {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .online h4 {
+    font-size: 30px;
+    height: max-content;
+    width: 80%;
+    display: inline-block;
+  }
+
+  .online h2 {
+    display: inline-block;
+    font-size: 30px;
+    width: 80%;
+  }
+
+  .online h6 {
+    display: inline-block;
+    padding-top: 100%;
+    font-size: 20px;
+    height: max-content;
+    width: 80%;
+  }
+
+  footer {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu h2 {
+    font-size: medium;
+  }
+
+  .menu ul li {
+    font-size: small;
+  }
+
+  .online h2,
+  .online h4 .online h6 {
+    font-size: smaller;
+  }
+
+  .menu {
+    height: 100vh;
+  }
+
+  .online {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 300px) {
+  .main {
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url("burger-mobile.jpg");
+    background-blend-mode: darken;
+  }
+
+  .main h1 {
+    text-size-adjust: auto;
+    max-width: fit-content;
+    font-family: "Berkshire Swash", cursive;
+    padding-top: 50%;
+    margin-left: 15%;
+    font-size: 65px;
+    color: rgb(224, 206, 45);
+    letter-spacing: 10px;
+  }
+
+  .main h4 {
+    padding-top: 2%;
+    max-width: fit-content;
+    font-family: "Laila", sans-serif;
+    margin-left: 15%;
+    font-size: 20px;
+    color: rgb(224, 206, 45);
+    letter-spacing: 2px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .box {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu h2,
+  .menu ul li {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .social {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .social img {
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .LOCATION {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .LOCATION iframe {
+    height: 500px;
+    width: 250px;
+  }
+
+  footer h6 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #232b2b;
+    color: black;
+    width: 100%;
+    height: 20px;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    background-color: #232b2b;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+    line-height: 10px;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+    height: 50vh;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav ul li a {
+    background-color: #232b2b;
+    font-size: 20px;
+    display: block;
+    color: rgb(224, 206, 45);
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(224, 206, 45);
+    transition: 0.3s ease;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url("burger-mobile.jpg");
+    background-blend-mode: darken;
+  }
+
+  .main h1 {
+    text-size-adjust: auto;
+    max-width: fit-content;
+    font-family: "Berkshire Swash", cursive;
+    padding-top: 50%;
+    margin-left: 15%;
+    font-size: 65px;
+    color: rgb(224, 206, 45);
+    letter-spacing: 10px;
+  }
+
+  .main h4 {
+    padding-top: 2%;
+    max-width: fit-content;
+    font-family: "Laila", sans-serif;
+    margin-left: 15%;
+    font-size: 25px;
+    color: rgb(224, 206, 45);
+    letter-spacing: 2px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .box {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu h2 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .menu ul li {
+    font-size: 15px;
+  }
+
+  .social {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .social img {
+    width: 80%;
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .LOCATION {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .LOCATION iframe {
+    height: 400px;
+    width: 250px;
+  }
+
+  footer h6 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #232b2b;
+    color: black;
+    width: 100%;
+    height: 20px;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    background-color: #232b2b;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 2px 0;
+    line-height: 20px;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+    height: 100vh;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav ul li a {
+    max-width: fit-content;
+    font-size: 15px;
+    background-color: #232b2b;
+    display: inline;
+    color: rgb(224, 206, 45);
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: rgb(224, 206, 45);
+    border-radius: 50px;
+    color: black;
+    transition: 0.3s ease;
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contactus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Just+Another+Hand&family=Laila:wght@300;400;500&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="cafesmall.png" type="image/icon type" />
+    <script
+      src="https://kit.fontawesome.com/7bf5fc8939.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="logo1.png" />
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <ul>
+        <li>
+          <a class="active" href="index.html"><b>HOME</b></a>
+        </li>
+        <li>
+          <a href="aboutus.html"><b>ABOUT US</b></a>
+        </li>
+        <li>
+          <a href="gallery.html"><b>GALLERY</b></a>
+        </li>
+        <li>
+          <a href="contactus.html"><b>CONTACT US</b></a>
+        </li>
+        <li>
+          <a href="orderonline.html" id="ORDER"><b>ORDER ONLINE</b></a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <div class="container">
+      <div class="info">
+        <h1>Cafe Maifil</h1>
+        <p>
+          At Cafe Maifil you can find a variety of snacks such as Bhel,
+          Sandwiches, Maggie and cold beverages.
+          <br />We are conveniently located near Malavali Railway Station,
+          Lonavala. <br />
+          Order online for fast service or home delivery!
+        </p>
+        <h2>Atmosphere</h2>
+        <ul>
+          <li>Casual Dining</li>
+          <li>Good for Group</li>
+        </ul>
+        <h2>Service Options</h2>
+        <ul>
+          <li>Space for Parking</li>
+          <li>Birthday parties arrangement</li>
+        </ul>
+        <h2>Business hours</h2>
+        <ul>
+          <li>Monday - Friday: 11:00 AM - 9:00 PM</li>
+          <li>Saturdy : Noon - 9:00 PM</li>
+          <li>Sunday : Closed</li>
+        </ul>
+        <h4>
+          <b
+            >Cafe Maifil, <br />
+            Near Malavali Railway Station, <br />
+            Ekvira Devi Road, Malavali, <br />
+            Lonavala
+          </b>
+        </h4>
+      </div>
+      <div class="contact-box">
+        <h1>FeedBack Form</h1>
+        <form action="https://formspree.io/f/xnqrjzzo" method="POST" />
+          <input
+            type="text"
+            name="FULL NAME"
+            id="name"
+            class="field"
+            placeholder="your name"
+            required
+          />
+
+          <input
+            type="text"
+            name="EMAIL"
+            id="email"
+            class="fieldemail"
+            placeholder="your email"
+            required
+          />
+
+          <input
+            type="number"
+            pattern="\d{10}"
+            NAME="PHONE"
+            id="phone"
+            class="field"
+            placeholder="phone number"
+            required
+          />
+
+          <textarea
+            id="message"
+            NAME="MESSAGE"
+            placeholder="message"
+            class="field"
+            required
+          ></textarea>
+
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      <div class="icons">
+        <a href="https://www.instagram.com/cafe_maifil" target="_blank">
+          <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+    <hr />
+  </body>
+</html>
